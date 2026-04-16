@@ -1,0 +1,77 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.modal-box {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 28px 32px;
+  width: 360px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  animation: slideUp 0.2s ease;
+  font-family: 'DM Sans', sans-serif;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.modal-message {
+  font-size: 15px;
+  color: #1a1a1a;
+  margin: 0 0 24px 0;
+  line-height: 1.5;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.modal-cancel {
+  padding: 9px 20px;
+  background: none;
+  border: 1px solid #e0e0de;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  color: #444441;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.modal-cancel:hover {
+  border-color: #888885;
+}
+
+.modal-confirm {
+  padding: 9px 20px;
+  background: #c22323;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.modal-confirm:hover {
+  background: #a81e1e;
+}

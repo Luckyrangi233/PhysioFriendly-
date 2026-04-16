@@ -1,0 +1,140 @@
+.cc-container {
+  background: #ffffff;
+  border: 1px solid #e8e8e6;
+  border-radius: 12px;
+  padding: 24px 28px;
+  max-width: 700px;
+  font-family: 'DM Sans', sans-serif;
+  animation: fadeUp 0.3s ease;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.cc-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 20px 0;
+}
+
+.cc-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.cc-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cc-full {
+  margin-bottom: 16px;
+    width: 100%;
+}
+
+.cc-field label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #888885;
+}
+
+.cc-field input,
+.cc-field select,
+.cc-field textarea {
+  padding: 9px 12px;
+  border: 1px solid #e0e0de;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  color: #1a1a1a;
+  background: #fafafa;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  resize: none;
+}
+
+.cc-field input:focus,
+.cc-field select:focus,
+.cc-field textarea:focus {
+  border-color: #c22323;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(194, 35, 35, 0.08);
+}
+
+.cc-required {
+  color: #c22323;
+}
+
+.cc-error {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fcebeb;
+  border: 1px solid #f09595;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #a32d2d;
+  margin-bottom: 14px;
+}
+
+.cc-error-icon {
+  width: 18px;
+  height: 18px;
+  background: #c22323;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.cc-success {
+  background: #eaf3de;
+  border: 1px solid #97c459;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #3b6d11;
+  margin-bottom: 16px;
+}
+
+.cc-submit {
+  width: 100%;
+  padding: 11px;
+  background: #c22323;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  margin-top: 4px;
+}
+
+.cc-submit:hover {
+  background: #a81e1e;
+}
+
+.cc-submit:active {
+  transform: scale(0.98);
+}
+
+.cc-submit:disabled {
+  background: #e0e0de;
+  color: #b4b2a9;
+  cursor: not-allowed;
+}

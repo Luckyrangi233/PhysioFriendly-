@@ -1,0 +1,225 @@
+.cs-container {
+  background: #ffffff;
+  border: 1px solid #e8e8e6;
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin-top: 24px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.cs-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 20px 0;
+}
+
+.cs-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.cs-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cs-field label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #888885;
+}
+
+.cs-field input,
+.cs-field textarea {
+  padding: 9px 12px;
+  border: 1px solid #e0e0de;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  color: #1a1a1a;
+  background: #fafafa;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  resize: none;
+}
+
+.cs-field input:focus,
+.cs-field textarea:focus {
+  border-color: #c22323;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(194, 35, 35, 0.08);
+}
+
+.cs-required {
+  color: #c22323;
+}
+
+.cs-metrics-section {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.cs-metrics-label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #888885;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.cs-metrics-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.cs-metric-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border: 1px solid #e0e0de;
+  border-radius: 20px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  color: #444441;
+  cursor: pointer;
+  transition: all 0.2s;
+  user-select: none;
+}
+
+.cs-metric-chip input {
+  display: none;
+}
+
+.cs-metric-chip:hover {
+  border-color: #c22323;
+  color: #c22323;
+}
+
+.cs-metric-chip.checked {
+  background: #fcebeb;
+  border-color: #c22323;
+  color: #c22323;
+  font-weight: 500;
+}
+
+.cs-metric-inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.cs-metric-input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cs-metric-input-field label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #888885;
+}
+
+.cs-metric-hint {
+  font-size: 10px;
+  color: #b4b2a9;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.cs-metric-input-field input {
+  padding: 9px 12px;
+  border: 1px solid #e0e0de;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  color: #1a1a1a;
+  background: #fafafa;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.cs-metric-input-field input:focus {
+  border-color: #c22323;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(194, 35, 35, 0.08);
+}
+
+.cs-error {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fcebeb;
+  border: 1px solid #f09595;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #a32d2d;
+  margin-bottom: 14px;
+}
+
+.cs-error-icon {
+  width: 18px;
+  height: 18px;
+  background: #c22323;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.cs-success {
+  background: #eaf3de;
+  border: 1px solid #97c459;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #3b6d11;
+  margin-bottom: 14px;
+}
+
+.cs-submit {
+  width: 100%;
+  padding: 11px;
+  background: #c22323;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.cs-submit:hover {
+  background: #a81e1e;
+}
+
+.cs-submit:active {
+  transform: scale(0.98);
+}
+
+.cs-submit:disabled {
+  background: #e0e0de;
+  color: #b4b2a9;
+  cursor: not-allowed;
+}

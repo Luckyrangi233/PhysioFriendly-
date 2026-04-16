@@ -1,0 +1,130 @@
+.profile-tab {
+  position: relative;
+}
+
+.profile-tab-trigger {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: #ffffff;
+  border: 1px solid #e0e0de;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.profile-tab-trigger:hover {
+  border-color: #c22323;
+  box-shadow: 0 0 0 3px rgba(194, 35, 35, 0.08);
+}
+
+.profile-avatar {
+  width: 34px;
+  height: 34px;
+  background-color: #c22323;
+  color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+}
+
+.profile-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.profile-role {
+  font-size: 11px;
+  color: #888885;
+}
+
+.profile-chevron {
+  width: 14px;
+  height: 14px;
+  color: #888885;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.profile-chevron.open {
+  transform: rotate(180deg);
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 240px;
+  background: #ffffff;
+  border: 1px solid #e0e0de;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  animation: dropIn 0.2s ease;
+  z-index: 100;
+}
+
+@keyframes dropIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.profile-dropdown-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.profile-dropdown-label {
+  font-size: 12px;
+  color: #888885;
+}
+
+.profile-dropdown-value {
+  font-size: 13px;
+  color: #1a1a1a;
+  font-weight: 500;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.profile-dropdown-divider {
+  height: 1px;
+  background: #e8e8e6;
+  margin: 8px 0;
+}
+
+.profile-logout {
+  width: 100%;
+  padding: 8px;
+  background: none;
+  border: 1px solid #e0e0de;
+  border-radius: 7px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  color: #c22323;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.profile-logout:hover {
+  background: #fcebeb;
+}

@@ -1,0 +1,132 @@
+.case-detail {
+  background: #ffffff;
+  border: 1px solid #e8e8e6;
+  border-radius: 12px;
+  padding: 28px;
+  max-width: 700px;
+  animation: fadeUp 0.3s ease;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.case-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e8e8e6;
+}
+
+.case-detail-avatar {
+  width: 52px;
+  height: 52px;
+  background: #fcebeb;
+  color: #c22323;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.case-detail-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 4px 0;
+}
+
+.case-detail-injury {
+  font-size: 13px;
+  color: #888885;
+}
+
+.case-detail-section {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #f0f0ee;
+}
+
+.case-detail-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.case-detail-section-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #b4b2a9;
+  margin-bottom: 14px;
+}
+
+.case-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.case-detail-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.case-detail-field.full-width {
+  grid-column: 1 / -1;
+}
+
+.case-detail-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #b4b2a9;
+}
+
+.case-detail-value {
+  font-size: 14px;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.case-detail-sessions-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.case-detail-sessions-header .case-detail-section-label {
+  margin-bottom: 0;
+}
+
+.case-detail-create-session-btn {
+  padding: 7px 16px;
+  background: #c22323;
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.case-detail-create-session-btn:hover {
+  background: #a81e1e;
+}
+
+.case-detail-no-sessions {
+  font-size: 13px;
+  color: #b4b2a9;
+}

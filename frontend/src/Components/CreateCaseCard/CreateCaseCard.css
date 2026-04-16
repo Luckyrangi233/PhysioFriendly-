@@ -1,0 +1,55 @@
+.create-case-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background: #ffffff;
+  border: 1.5px dashed #e0e0de;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+  width: 260px;
+  animation: fadeUp 0.4s ease;
+}
+
+.create-case-card:hover {
+  border-color: #c22323;
+  box-shadow: 0 0 0 3px rgba(194, 35, 35, 0.08);
+  transform: translateY(-2px);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.create-case-icon {
+  width: 42px;
+  height: 42px;
+  background: #fcebeb;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.create-case-icon svg {
+  width: 20px;
+  height: 20px;
+  color: #c22323;
+}
+
+.create-case-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  display: block;
+}
+
+.create-case-subtitle {
+  font-size: 12px;
+  color: #888885;
+  display: block;
+  margin-top: 2px;
+}
