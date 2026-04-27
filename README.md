@@ -169,6 +169,6 @@ https://youtu.be/Ny5AYRJ_uCE?si=s-SsHmX3ZssY4dVC
 ## Author
 
 Prashant Singh Sisodia
-Lucky
-Nitesh
+,Lucky
+,Nitesh
 "# PhysioFriendly-" 
